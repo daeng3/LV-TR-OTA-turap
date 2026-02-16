@@ -131,7 +131,8 @@ void perform_github_update() {
   Serial.println(">>> STARTING GITHUB OTA UPDATE... <<<");
   
   // Beri tanda visual di 7-segment
-  display.showNumberHex(0xAAAA); // Tampil "AAAA"
+  uint8_t segAAA[] = {0x77, 0x77, 0x77, 0x77}; // "AAAA"
+  display.setSegments(segAAA);
   digitalWrite(LED_WIFI, LOW);
 
   WiFiClientSecure clientSecure;
@@ -307,7 +308,8 @@ void loop() {
   // 2. Eksekusi Perintah Flag (Prioritas Utama)
   if (flagRestart) {
     Serial.println("Rebooting system...");
-    display.showNumberHex(0xDEAD); // Tampil "DEAD" (Restarting)
+    uint8_t segDEAD[] = {0x5E, 0x79, 0x77, 0x5E}; // "dEAd"
+    display.setSegments(segDEAD); // Tampil "dEAd" (Restarting)
     delay(1000);
     ESP.restart();
   }
