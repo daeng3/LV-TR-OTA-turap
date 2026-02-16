@@ -18,8 +18,8 @@ const int currentVersion = 1;
 
 // URL GitHub untuk Auto-Update
 // Ganti USERNAME dan REPO dengan milik Anda!
-const String repoRaw = "https://raw.githubusercontent.com/daeng3/LevionProject/main/";
-const String firmwareURL = repoRaw + "tank3_firmware.bin"; 
+const String repoRaw = "https://raw.githubusercontent.com/daeng3/LV-TR-OTA-turap/refs/heads/main/";
+const String firmwareURL = repoRaw + "levion-Turap-OTA.ino.bin"; 
 const String versionURL  = repoRaw + "version.txt";        
 
 // ==================== HARDWARE CONFIG ====================
