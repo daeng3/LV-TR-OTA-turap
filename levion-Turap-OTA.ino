@@ -14,7 +14,7 @@
 const int TANK_NUMBER = 3;
 
 // Versi Firmware Saat Ini (Ubah ini setiap kali compile baru)
-const int currentVersion = 1;
+const int currentVersion = 2;
 
 // URL GitHub untuk Auto-Update
 // Ganti USERNAME dan REPO dengan milik Anda!
@@ -51,7 +51,7 @@ const char* webUser = "admin";
 const char* webPass = "levion123";
 
 // ==================== VARIABLES ====================
-const int tinggi_tangki_cm = 287; 
+const int tinggi_tangki_cm = 182; 
 const int titik_buta_cm = 33;
 
 WiFiClient espClient;
